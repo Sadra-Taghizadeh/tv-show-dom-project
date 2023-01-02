@@ -32,8 +32,8 @@ const series=(movies)=> {
         img.classList.add("img");
         const rate=document.createElement("span");
         const airtime=document.createElement("span");
-        rate.classList.add("AR");
-        airtime.classList.add("AR");
+        rate.classList.add("time");
+        airtime.classList.add("time");
 
         rate.textContent=`rate:${movie.rating.average}`;
         airtime.textContent=`airtime:${movie.airtime}`;
@@ -48,6 +48,7 @@ const series=(movies)=> {
 
         card.addEventListener("mouseover", ()=> {
                 summary.style.display="";
+                
             });
         const select=document.querySelector("select");
         option=document.createElement("option");
